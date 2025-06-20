@@ -14,10 +14,7 @@ namespace LabSCP181
         public static void spawn(Player player)
         {
             player.SetRole(Plugin.StatusPlugin.Config.Role);
-            foreach (var item in Plugin.StatusPlugin.Config.ItemTypes)
-            {
-                player.AddItem((ItemType)Enum.Parse(typeof(ItemType), item));
-            }
+            player.AddItem(ItemType.KeycardJanitor);
             player.SetRank("SCP181", "pick");
             player.MaxHealth = Plugin.StatusPlugin.Config.MaxHealth;
             player.Health = player.MaxHealth;

@@ -13,12 +13,6 @@ namespace LabSCP181
         public bool IsEnabled { get; set; } = true;
         [Description("SCP181的血量")]
         public int MaxHealth { get; set; } = 120;
-        [Description("SCP181的装备")]
-        public List<string> ItemTypes = new List<string>()
-        {
-            ItemType.KeycardJanitor.ToString(),
-            ItemType.Medkit.ToString(),
-        };
         [Description("SCP181的角色")]
         public RoleTypeId Role { get; set; } = RoleTypeId.ClassD;
         [Description("SCP181死亡广播")]
